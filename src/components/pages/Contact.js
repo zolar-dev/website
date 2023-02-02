@@ -5,7 +5,7 @@ function Contact() {
     return(
         <div className="App">
                 <nav>
-                    <h3>Basic</h3>
+                    <h3>Formulario de contacto</h3>
                 </nav>
                 <BasicForm/>
         </div>

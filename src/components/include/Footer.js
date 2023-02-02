@@ -5,7 +5,7 @@ export default function Footer(){
     return(
         <section className="footer bg-dark text-white">
             <div className="container">
-                <div className="row ">
+                <div className="row">
                     <div className="col-md-4">
                         <h6>Informacion de la empresa</h6>
                         <hr/>
@@ -17,7 +17,7 @@ export default function Footer(){
                         <h6>Quick links</h6>
                         <hr/>
                         <Link to="/">Home</Link>
-                        <Link to="/About">About</Link>
+                        <Link to="/Service">About</Link>
                         <Link to="/Contact">Contact</Link>
                     </div>
                     <div className="col-md-4">

@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import CoreValues from "./include/CoreValues";
-import Services from "./include/Services";
 
 export default function Home() {
     return(
@@ -23,9 +22,6 @@ export default function Home() {
 
         {/* Nuestra mision, vision y valores etc.*/}
         <CoreValues/>
-
-        {/*nuestros servicios*/}
-        <Services/>
 
         </div>
     );

@@ -4,7 +4,7 @@ import Service1 from '../../images/imagenServicio.jpg';
 const ServiceCard = ({ imageSrc, title, description }) => {
     return (
       <div className="col-md-4">
-        <div className="card shadow">
+        <div className="card-container shadow">
           <img src={imageSrc} className="w-100 border-bottom" alt="Servicios" />
           <div className="card-body">
             <h6>{title}</h6>
