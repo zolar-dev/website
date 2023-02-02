@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import VMC from "./include/Vmc";
+import CoreValues from "./include/CoreValues";
 import Services from "./include/Services";
 
-function Home() {
+export default function Home() {
     return(
         <div>
             <section className="section">
@@ -22,7 +22,7 @@ function Home() {
         </section>
 
         {/* Nuestra mision, vision y valores etc.*/}
-        <VMC/>
+        <CoreValues/>
 
         {/*nuestros servicios*/}
         <Services/>
@@ -31,5 +31,3 @@ function Home() {
     );
 
 }
-
-export default Home;
