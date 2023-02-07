@@ -13,13 +13,13 @@ export default function Navbar() {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <Link to="/" class="nav-link active">Home</Link>
+                        <Link to="/" class="nav-link active">Pagina principal</Link>
                     </li>
                     <li class="nav-item">
-                        <Link to="/service" class="nav-link active">Services</Link>
+                        <Link to="/service" class="nav-link active">Servicios</Link>
                     </li>                        
                     <li class="nav-item">
-                        <Link to="/contact" class="nav-link active">Contact Us</Link>
+                        <Link to="/contact" class="nav-link active">Contacto</Link>
                     </li>
                 </ul>
                 </div>

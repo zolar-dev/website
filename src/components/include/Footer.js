@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer(){
     return(
-        <section className="footer bg-dark text-white">
+        <footer className="footer bg-dark text-white">
             <div className="container">
                 <div className="row">
                     <div className="col-md-4">
@@ -14,14 +14,14 @@ export default function Footer(){
                         </p>
                     </div>
                     <div className="row col-md-4">
-                        <h6>Quick links</h6>
+                        <h6>Navegar</h6>
                         <hr/>
-                        <Link to="/">Home</Link>
-                        <Link to="/Service">About</Link>
-                        <Link to="/Contact">Contact</Link>
+                        <Link to="/">Pagina principal</Link>
+                        <Link to="/Service">Servicios</Link>
+                        <Link to="/Contact">Contacto</Link>
                     </div>
                     <div className="col-md-4">
-                        <h6>Informacion de contact</h6>
+                        <h6>Informacion de contacto</h6>
                         <hr/>
                         <p className="text-white mb-1">4 C Oriente No.3A Antigua Guatemala</p>
                         <p className="text-white mb-1">Numero +123581237</p>
@@ -30,6 +30,6 @@ export default function Footer(){
                     </div>
                 </div>
             </div>
-        </section>
+        </footer>
     );
 }
