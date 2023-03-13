@@ -1,7 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { FaLinkedin, FaFacebook } from 'react-icons/fa'
+import '../../Footer.css';
 
 export default function Footer(){
+    const[linkedinUrl] = useState('www.linkedin.com/in/zolar-dev-659a88266');
+    const[facebookUrl] = useState('https://www.facebook.com/profile.php?id=100090554225339');
+
     return(
         <footer className="footer bg-dark text-white">
             <div className="container">
@@ -10,23 +16,47 @@ export default function Footer(){
                         <h6>Informacion de la empresa</h6>
                         <hr/>
                         <p>
-                        It is a long established fact that a reader will be distracted by the readable
+                        Zolar es una empresa de tecnología enfocada en dar soluciones informaticas.
                         </p>
                     </div>
-                    <div className="row col-md-4">
+                    <div className="col-md-4">
                         <h6>Navegar</h6>
                         <hr/>
-                        <Link to="/">Pagina principal</Link>
-                        <Link to="/Service">Servicios</Link>
-                        <Link to="/Contact">Contacto</Link>
+                        <ul>
+                            <li>
+                            <Link to="/">Pagina principal</Link>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                            <Link to="/Service">Servicios</Link>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                            <Link to="/Contact">Contacto</Link>
+                            </li>
+                        </ul>
                     </div>
                     <div className="col-md-4">
                         <h6>Informacion de contacto</h6>
                         <hr/>
-                        <p className="text-white mb-1">4 C Oriente No.3A Antigua Guatemala</p>
-                        <p className="text-white mb-1">Numero +123581237</p>
-                        <p className="text-white mb-1">123098123908123</p>
-                        <p className="text-white mb-1">zolar@gmail.com</p>
+                        <ul>
+                            <li>
+                                <a href={linkedinUrl}>
+                                    <FaLinkedin />
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href={facebookUrl}>
+                                    <FaFacebook />
+                                </a>
+                            </li>
+                        </ul>
+                        <p className="text-white mb-1">Numero +502 5017-6977</p>
+                        <a href="mailto:zolar@gmail.com">zolar@gmail.com</a>
                     </div>
                 </div>
             </div>

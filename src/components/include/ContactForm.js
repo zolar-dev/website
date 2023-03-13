@@ -1,43 +1,60 @@
 import { useFormik } from "formik";
 import { basicSchema } from "../schemas";
-
-const onSubmit = async (values, actions) => {
-    console.log(values);
-    console.log(actions);
-    console.log("Enviado");
-    await new Promise((resolve) => setTimeout(resolve, 1000)); //Es una simulacion de cuando se envie el formulario
-    actions.resetForm()
-}
+import emailjs from 'emailjs-com';
+import React, { useRef, useState } from 'react';
+import'../../Form.css';
 
 const BasicForm = () => {
     const {
         values,
         errors,
         touched,
-        isSubmitting,
         handleBlur,
         handleChange,
-        handleSubmit
+        handleSubmit,
+        isValid,
+        isSubmitting
     } = useFormik({
-    initialValues:{
-        name: "",
-        email: "",
-        message: "",
-    },
-    validationSchema: basicSchema,
-    onSubmit,
-});
+        initialValues:{
+            name: "",
+            email: "",
+            message: "",
+        },
+        validationSchema: basicSchema,
+        errorClassname: 'error',
+        onSubmit: (values, { setSubmitting, resetForm }) => {
+            console.log("Enviando formulario...", values);
+            emailjs.sendForm(
+                'service_uy6u7p9',
+                'template_ryflvvo',
+                form.current,
+                'DCmzaLmf72d0jcB0s'
+            )
+            .then((result) => {
+                console.log(result.text);
+                console.log("Mensaje enviado");
+                resetForm();
+            }, (error) => {
+                console.log(error.text);
+            })
+            .finally(() => {
+                setSubmitting(false);
+                setIsSending(false);
+            });
+        }
+    });
 
-    console.log(errors);
+    const form = useRef();
+    const [setIsSending] = useState(false);
 
     return (
         <div className="Form">
-            <form onSubmit={handleSubmit} autoComplete="off">
+            <form onSubmit={handleSubmit} autoComplete="off" ref={form}>
                 <label htmlFor="name">Nombre Completo</label>
                 <input
                     value={values.name}
                     onChange={handleChange}
-                    id="name"
+                    name="name"
                     type="name"
                     placeholder="Ingresa tu Nombre Completo"
                     onBlur={handleBlur}
@@ -48,7 +65,7 @@ const BasicForm = () => {
                 <input
                     value={values.email}
                     onChange={handleChange}
-                    id="email"
+                    name="email"
                     type="email"
                     placeholder="Ingresa tu correo"
                     onBlur={handleBlur}
@@ -59,11 +76,13 @@ const BasicForm = () => {
                 <input
                     value={values.message}
                     onChange={handleChange}
-                    id="message" 
+                    name="message" 
                     type="message"
                     placeholder="Ingresa tu mensaje"
                 />
-                <button disabled={isSubmitting} type="submit">Enviar</button>
+                <button type="submit" disabled={!isValid || isSubmitting}>
+                    {isSubmitting ? 'Enviando...' : 'Enviar'}
+                </button>
             </form>
         </div>
     );

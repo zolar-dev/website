@@ -11,16 +11,16 @@ const Values = ({ title, description }) => {
 
   export default function CoreValues(){
     const valuesArr = [
-        { title: "Nuestra Vision", description: "Texto de la Vision" },
-        { title: "Nuestra Mision", description: "Texto de la Mision" },
-        { title: "Valores", description: "Texto de los valores" }
+        { title: "Nuestra Misión", description: "Ser una empresa comprometida a mejorar las vidas y entornos laborales de nuestros clientes, colaboradores y comunidades a través de la tecnología." },
+        { title: "Nuestra Visión", description: "Ser un referente de soluciones tecnológicas a nivel mundial generando valor a empresas y personas en todos los ámbitos y sectores." },
+        { title: "Valores", description: "People first." }
     ]
     return(
         <section className="section bg-c-light border-top">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 mb-5 text-center">
-                            <h3 className="main-heading">Vision, mision y valores</h3>
+                            <h3 className="main-heading">Misión, Visión y Valores</h3>
                             <div className="underline mx-auto"></div>
                             <div className="row">
                             {valuesArr.map((values) => (
