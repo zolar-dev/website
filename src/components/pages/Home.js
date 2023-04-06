@@ -1,6 +1,7 @@
 import React from "react";
 import CoreValues from "./include/CoreValues";
 import SolarSystem from "./include/SolarSystem"
+import { FechaContador, ProyectosContador, CuentaRegresivaContador, ClientesContador } from "./include/Counts.js"
 
 export default function Home() {
     return(
@@ -31,6 +32,13 @@ export default function Home() {
         </section>
 
         <SolarSystem/>
+
+        <div>
+            <FechaContador/>
+            <ProyectosContador/>
+            <CuentaRegresivaContador/>
+            <ClientesContador/>
+        </div>
 
         {/* Nuestra mision, vision y valores etc.*/}
         <CoreValues/>
