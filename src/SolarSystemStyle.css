@@ -1,0 +1,58 @@
+.solar-system {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 50px auto;
+  border-radius: 50%;
+  background-color: rgb(197, 197, 197);
+  box-shadow: 0 0 50px white;
+}
+
+.sun {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: yellow;
+  box-shadow: 0 0 50px yellow;
+}
+
+.javascript {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-75%, -50%) rotate(-90deg);
+  transform-origin: center center;
+  animation: orbit-mercury 4s linear infinite;
+}
+
+.javascript .planet-img {
+  width: 25%;
+}
+
+
+@keyframes orbit-mercury {
+  from { transform: translate(-75%, -50%) rotate(0deg); }
+  to { transform: translate(-75%, -50%) rotate(360deg); }
+}
+
+.python {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-150%, -50%) rotate(90deg);
+  transform-origin: center center;
+  animation: orbit-earth 6s linear infinite;
+}
+
+.planet-img{
+  width: 25%;
+}
+
+@keyframes orbit-earth {
+  from { transform: translate(-100%, -50%) rotate(0deg); }
+  to { transform: translate(-100%, -50%) rotate(360deg); }
+}
