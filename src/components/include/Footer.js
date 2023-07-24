@@ -20,7 +20,7 @@ export default function Footer(){
                         </p>
                     </div>
                     <div className="col-md-4">
-                        <h6>Navegar</h6>
+                        <h6>Navega</h6>
                         <hr/>
                         <ul>
                             <li>
