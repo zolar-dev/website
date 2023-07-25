@@ -8,6 +8,7 @@ function Contact() {
                     <h3>Formulario de contacto</h3>
                 </nav>
                 <BasicForm/>
+                <meta name="description" content="Fill out our contact form to get in touch with us." />
         </div>
     );
 }

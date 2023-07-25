@@ -10,6 +10,10 @@ export default function Footer(){
 
     return(
         <footer className="footer bg-dark text-white">
+            <meta name="author" content="Zolar" />
+            <meta name="robots" content="index,follow" />
+            <meta name="language" content="es" />
+            <meta name="keywords" content="Technology innovation"/>
             <div className="container">
                 <div className="row">
                     <div className="col-md-4">
@@ -20,7 +24,7 @@ export default function Footer(){
                         </p>
                     </div>
                     <div className="col-md-4">
-                        <h6>Navega</h6>
+                        <h6>Navegar</h6>
                         <hr/>
                         <ul>
                             <li>
@@ -43,14 +47,14 @@ export default function Footer(){
                         <hr/>
                         <ul>
                             <li>
-                                <a href={linkedinUrl}>
+                                    <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">
                                     <FaLinkedin />
                                 </a>
                             </li>
                         </ul>
                         <ul>
                             <li>
-                                <a href={facebookUrl}>
+                                <a href={facebookUrl} target="_blank" rel="noopener noreferrer">
                                     <FaFacebook />
                                 </a>
                             </li>
