@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import Service1 from '../../images/imagenServicio.jpg';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
 
 const ServiceCard = ({ imageSrc, title, description }) => {
   return (
@@ -26,13 +25,13 @@ const ServiceCard = ({ imageSrc, title, description }) => {
     ];
 
     const sliderSettings = {
-      dots: true, // Mostrar puntos de navegación
+      dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 1, // Mostramos solo 1 tarjeta a la vez
+      slidesToShow: 1,
       slidesToScroll: 1,
-      nextArrow: <div className="slick-next">Siguiente</div>, // Flecha derecha personalizada
-      prevArrow: <div className="slick-prev">Anterior</div>, // Flecha izquierda personalizada
+      nextArrow: <div className="slick-next">Siguiente</div>, // Flecha derecha 
+      prevArrow: <div className="slick-prev">Anterior</div>, // Flecha izquierda
     };
 
     return (
