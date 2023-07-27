@@ -29,3 +29,6 @@ code {
   margin-bottom: 5px;
   margin-left: 10px;
 }
+.slick-prev:before, .slick-next:before {
+  color: #b35e0f !important;
+}

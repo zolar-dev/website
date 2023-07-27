@@ -1,7 +1,7 @@
 import React from "react";
 import CoreValues from "./include/CoreValues";
-import SolarSystem from "./include/SolarSystem"
-import { FechaContador, ProyectosContador, CuentaRegresivaContador, ClientesContador } from "./include/Counts.js"
+import Services from "./include/Services";
+import Contact from "./Contact";
 
 export default function Home() {
     return(
@@ -27,18 +27,16 @@ export default function Home() {
                                 </ul>
                             </div>
                         </div>
+                        <div>
+                            <Services />
+                        </div>
+                        <div>
+                            <Contact />
+                        </div>
+
                     </div>
                 </div>
         </section>
-
-        <SolarSystem/>
-
-        <div>
-            <FechaContador/>
-            <ProyectosContador/>
-            <CuentaRegresivaContador/>
-            <ClientesContador/>
-        </div>
 
         {/* Nuestra mision, vision y valores etc.*/}
         <CoreValues/>

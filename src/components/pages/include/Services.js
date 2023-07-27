@@ -1,20 +1,21 @@
 import React from "react"
+import Slider from "react-slick";
 import Service1 from '../../images/imagenServicio.jpg';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
 
 const ServiceCard = ({ imageSrc, title, description }) => {
-    return (
-      <div className="col-md-4">
-        <div className="card-container shadow">
-          <img src={imageSrc} className="w-100 border-bottom" alt="Servicios" />
-          <div className="card-body">
-            <h6>{title}</h6>
-            <div className="underline"></div>
-            <p>{description}</p>
-          </div>
-        </div>
+  return (
+    <div className="card-container" style={{ width: "100%" }}>
+      <img src={imageSrc} className="w-80 border-bottom" alt="Servicios" />
+      <div className="card-body">
+        <h6>{title}</h6>
+        <p>{description}</p>
       </div>
-    );
-  };
+    </div>
+  );
+};
 
   export default function Services(){
     const servicesArr = [
@@ -24,20 +25,30 @@ const ServiceCard = ({ imageSrc, title, description }) => {
         { imageSrc: Service1, title: "Outsourcing de colaboradores en el área de tecnología", description: "Sabemos que no todas las empresas son iguales y cada necesidad es distinta, si lo que necesitas son colaboradores a tiempo parcial o completo dedicados al área de tecnología te brindamos el servicio outsourcing con profesionalismo, ética y nuestro soporte y respaldo."}
     ];
 
-    return(
-        <section className="section border-top">
-            <div className="container">
-                <div className="row">
-                    {servicesArr.map((service) => (
-                        <ServiceCard
-                        imageSrc={service.imageSrc}
-                        title={service.title}
-                        description={service.description}
-                        />
-                    ))}
-                    </div>
-            </div>
+    const sliderSettings = {
+      dots: true, // Mostrar puntos de navegación
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1, // Mostramos solo 1 tarjeta a la vez
+      slidesToScroll: 1,
+      nextArrow: <div className="slick-next">Siguiente</div>, // Flecha derecha personalizada
+      prevArrow: <div className="slick-prev">Anterior</div>, // Flecha izquierda personalizada
+    };
 
-</section>
+    return (
+      <section className="section border-top">
+        <div className="container">
+          <Slider {...sliderSettings}>
+            {servicesArr.map((service) => (
+              <ServiceCard
+                key={service.title}
+                imageSrc={service.imageSrc}
+                title={service.title}
+                description={service.description}
+              />
+            ))}
+          </Slider>
+        </div>
+      </section>
     );
-}
+  }

@@ -27,16 +27,6 @@ export default function Footer(){
                             <Link to="/">Pagina principal</Link>
                             </li>
                         </ul>
-                        <ul>
-                            <li>
-                            <Link to="/Service">Servicios</Link>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                            <Link to="/Contact">Contacto</Link>
-                            </li>
-                        </ul>
                     </div>
                     <div className="col-md-4">
                         <h6>Informacion de contacto</h6>
