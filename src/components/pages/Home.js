@@ -6,6 +6,8 @@ import { FechaContador, ProyectosContador, CuentaRegresivaContador, ClientesCont
 export default function Home() {
     return(
         <div>
+             <meta name="description" content="Zolar is a company focused on providing customized solutions in the field of technology and innovation. We offer technological consultancy, development of tailor-made applications and systems, website creation, and ERP systems implementation." />
+            <meta name="keywords" content="Zolar, technology solutions, innovation, technological consultancy, custom applications, website creation, ERP systems, business innovation, IT services, technology company" />
             <section className="section">
                 <div className="container">
                     <div className="row">
