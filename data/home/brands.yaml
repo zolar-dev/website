@@ -1,0 +1,19 @@
+enabled: true
+id: "brands"
+
+content:
+  title: "We work with big tech and startups"
+  items:
+    - "images/brands-ppt-logo.png"
+    - "images/brands-mt-logo.png"
+    - "images/brands-unicef-logo.png"
+    - "images/brands-onegoal-logo.jpg"
+    - "images/brands-oh-logo.png"
+    - "images/brands-sophos.png"
+  items2:
+    - "images/brands-funsepa.png"
+    - "images/brands-uvg.png"
+    - "images/brands-google.png"
+    - "images/brands-sircles.png"
+    - "images/brands-pv.png"
+    - "images/brands-humming.png"

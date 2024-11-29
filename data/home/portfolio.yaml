@@ -1,0 +1,41 @@
+enabled: true
+id: "portfolio"
+
+content:
+  - image: "images/portfolio-decided.png"
+    title: "Building end-to-end services"
+    text: "Our suite of services includes frontend and backend web development, data analysis, data engineering, process automation, software QA, and project management, offering end-to-end solutions that ensure quality, efficient workflows and smooth user experiences for clients. Our team has successfully delivered top-notch, efficient solutions for clients such as Moneythink, OneGoal Graduation, HummingbirdIT, and Google."
+    services:
+      - "Process automation for streamlining tasks, enhancing accuracy, improving efficiency, and ensuring seamless workflow execution"
+      - "Software QA to ensure software quality, identifying bugs, validating functionality, and enhancing system performance"
+      - "Developed and maintained the web application, handling both backend and frontend tasks to deliver seamless, user-friendly, and efficient solutions"
+      - "Designed data pipelines and performed analysis to deliver actionable insights and optimize data workflows for a third-party client"
+  
+  - image: "images/portfolio-accounting.png"
+    title: "Business Systems Implementation"
+    text: "We provide comprehensive solutions for businesses looking to streamline their operations through effective system implementations. From accounting software migration to CRM deployment and database implementation, we ensure seamless transitions that enhance workflow efficiency and accuracy. We've successfully delivered these services to companies like Funsepa, Programa Valentina, HummingbirdIT and Sophos."
+    services:
+    - "We create tailored accounting structures from scratch, designed specifically to meet the business needs. We specialize in migrating accounting records to and from QuickBooks, Zoho Books, SAP Business One, ensuring the setup aligns perfectly with your operational requirements."
+    - "We deploy and customize CRM solutions that enhance customer management and improve sales workflows. Whether it's Monday.com, or other leading CRM platforms, we tailor the system to fit the business processes, driving better team collaboration and customer engagement."
+    - "Design and deploy robust database systems to optimize data storage, improve accessibility, and support scalable growth for your business operations."
+
+  - image: "images/portfolio-ppt.png"
+    title: "Enhacing a Data Driven vision"
+    text: "We provided PatientPoint with advanced data engineering and analysis, streamlining data integration and delivering insights to enhance patient engagement and optimize healthcare outcomes."
+    services:
+    - "Built and optimized data pipelines, ensuring efficient data flow and integration to support analytics and decision-making"
+    - "Developed and implemented automated anomaly detection systems, leveraging software and data analysis to identify and address irregularities"
+    - "Designed and developed a data lake architecture, ensuring efficient storage, integration, and accessibility of large datasets"
+
+    buttons: 
+      - label: "Know more"
+        url: "https://patientpoint.com/"
+
+  - image: "images/portfolio-funsepa.png"
+    pretitle: "Funsepa: Software development and architecture design"
+    title: "Creating everything from scratch"
+    text: "The NA'AT platform allows communities to access learning modules and collaborative spaces between teachers and students through interactive activities, all without the need for an internet connection."
+
+    buttons: 
+      - label: "Meet the project"
+        url: "https://www.funsepa.org/es/naat"

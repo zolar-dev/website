@@ -1,0 +1,15 @@
+enabled: true
+id: "hero"
+
+content:
+  title: "Making things **work**"
+  text: "Empowering growth with expert Software Development, Data Solutions and Financial Consulting."
+
+  buttonPrimary:
+    label: "How we work"
+    url: "#"
+
+  buttonSecondary:
+    label: "Let's talk"
+    url: ""
+
