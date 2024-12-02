@@ -1,0 +1,3 @@
+[submodule "themes/up-business-theme"]
+	path = themes/up-business-theme
+	url = git@github.com:zolar-dev/hugo-up-theme.git

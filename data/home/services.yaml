@@ -1,0 +1,26 @@
+# enabled: true
+# id: "services"
+
+# content:
+#   title: "Our Highlights"
+#   text: "We specialize in delivering cutting-edge software development, advanced data engineering, and data science solutions. Our financial consulting expertise bridges technology and strategy to drive your success."
+#   cards:
+#     - image: "images/services-decided.png"
+#       title: "DecidEd"
+#       text: "DecidED provides students and advisors with resources, tools and guidance to compare college costs, financial aid benefits, and other fit factors."
+#       button:
+#         label: "See it live"
+#         url: "https://decided.org/"
+
+#     - image: "images/services-web-development.png"
+#       title: "PatientPoint"
+#       text: "We provided PatientPoint with advanced data engineering and analysis, streamlining data integration and delivering insights to enhance patient engagement and optimize healthcare outcomes."
+
+#     - image: "images/services-web-development.png"
+#       title: "NA'AT"
+#       text: "NA'AT enables collaborative spaces between teachers and students through interactive activities.
+
+# Without the need for internet, the platform is installed on the computer through a portable USB device. Once installed, the teacher can then begin the 22-week journey towards educational transformation."
+#       button:
+#         label: "Learn more"
+#         url: "https://www.funsepa.org/naat"
