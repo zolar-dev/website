@@ -23,7 +23,7 @@ params:
 
   social:
     dribbble: "#"
-    instagram: "#"
+    instagram: "https://www.instagram.com/zolar.dev"
     facebook: "#"
     twitter: "#"
 
@@ -33,7 +33,7 @@ params:
   contact:
     - "info@zolar.dev"
 
-  copyright: "© 2024 Zolar All Rights Reserved"
+  copyright: "© 2025 Zolar All Rights Reserved"
 
 menus:
   main:
@@ -51,7 +51,7 @@ menus:
 
   buttons:
     - name: "Book a call"
-      url: "https://calendar.app.google/fcjhLQiQ3thBvc7L6"
+      url: "/#"
       weight: 5
       pre: "btn btn-primary text-light"
 

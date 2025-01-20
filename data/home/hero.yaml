@@ -7,9 +7,9 @@ content:
 
   buttonPrimary:
     label: "How we work"
-    url: "#"
+    url: "#portfolio"
 
   buttonSecondary:
     label: "Let's talk"
-    url: ""
+    url: "https://calendar.app.google/fcjhLQiQ3thBvc7L6"
 

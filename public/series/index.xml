@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on Zolar</title>
-    <link>http://192.168.68.54:1313/series/</link>
+    <link>https://zolar.dev/series/</link>
     <description>Recent content in Series on Zolar</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://192.168.68.54:1313/series/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zolar.dev/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Themes Guide</title>
-      <link>http://192.168.68.54:1313/series/themes-guide/</link>
+      <link>https://zolar.dev/series/themes-guide/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://192.168.68.54:1313/series/themes-guide/</guid>
+      <guid>https://zolar.dev/series/themes-guide/</guid>
       <description></description>
     </item>
   </channel>
